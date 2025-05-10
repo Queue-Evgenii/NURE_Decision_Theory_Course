@@ -90,15 +90,15 @@ const handleAlternativeSelection = (alternativeIndex: number) => {
         <div>
           <h2>Alternatives</h2>
           <AlternativesTable :alternatives="alternatives" :clickable="true"
-            @alternativeSelected="handleAlternativeSelection" />
+            @alternativeSelected="handleAlternativeSelection" :scrollable="true" />
         </div>
         <div>
           <h2>Best alternative</h2>
-          <AlternativesTable :alternatives="[bestAlternative]" />
+          <AlternativesTable :alternatives="[bestAlternative]" :scrollable="true" />
         </div>
         <div>
           <h2>Worst alternative</h2>
-          <AlternativesTable :alternatives="[worstAlternative]" />
+          <AlternativesTable :alternatives="[worstAlternative]" :scrollable="true" />
         </div>
       </template>
 
@@ -111,7 +111,7 @@ const handleAlternativeSelection = (alternativeIndex: number) => {
       && incomparableThanSelectedAlternative !== undefined" class="alternatives-by-target">
       <div>
         <h2>Selected alternative</h2>
-        <AlternativesTable :alternatives="[selectedAlternative]" />
+        <AlternativesTable :alternatives="[selectedAlternative]" :scrollable="true" />
       </div>
       <ul>
         <li>
@@ -129,15 +129,15 @@ const handleAlternativeSelection = (alternativeIndex: number) => {
       </ul>
       <div>
         <h2>Better then selected alternative</h2>
-        <AlternativesTable :alternatives="betterThanSelectedAlternative" />
+        <AlternativesTable :alternatives="betterThanSelectedAlternative" :scrollable="true" />
       </div>
       <div>
         <h2>Worse then selected alternative</h2>
-        <AlternativesTable :alternatives="worseThanSelectedAlternative" />
+        <AlternativesTable :alternatives="worseThanSelectedAlternative" :scrollable="true" />
       </div>
       <div>
         <h2>Non-comparative alternatives</h2>
-        <AlternativesTable :alternatives="incomparableThanSelectedAlternative" />
+        <AlternativesTable :alternatives="incomparableThanSelectedAlternative" :scrollable="true" />
       </div>
     </section>
   </main>

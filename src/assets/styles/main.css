@@ -104,3 +104,8 @@ tr.red {
 tr:hover {
   background-color: rgba(240, 240, 240, 0.899);
 }
+
+select {
+  width: 100%;
+  padding: 2px 4px;
+}

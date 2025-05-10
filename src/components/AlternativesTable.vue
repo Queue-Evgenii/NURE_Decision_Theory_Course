@@ -10,13 +10,17 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  scrollable: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const emits = defineEmits(['alternativeSelected']);
 </script>
 
 <template>
-  <div class="scrollable-table">
+  <div :class="scrollable ? 'scrollable-table' : ''">
     <table class="alternatives-table">
       <thead>
         <tr>
