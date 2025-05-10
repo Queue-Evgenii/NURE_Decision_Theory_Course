@@ -1,0 +1,41 @@
+{
+  "criterias": [
+    {
+      "name": "K1",
+      "variants": [
+        {
+          "name": 1,
+          "weight": 3
+        },
+        {
+          "name": 2,
+          "weight": 2
+        },
+        {
+          "name": 3,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "K2",
+      "variants": [
+        {
+          "name": 1,
+          "weight": 3
+        },
+        {
+          "name": 2,
+          "weight": 2
+        },
+        {
+          "name": 3,
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "grades": [
+    1, 2, 1, 1, 2, 1
+  ]
+}

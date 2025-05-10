@@ -1,0 +1,106 @@
+@import "./reset.css";
+html, body {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 16px;
+	line-height: 1;
+}
+._container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+}
+nav {
+  display: flex;
+  gap: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+section {
+  padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+}
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+ul {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+}
+li {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+label { margin-bottom: 12px; }
+input, label {
+	display: block;
+	font-size: 1rem;
+}
+input {
+  cursor: pointer;
+}
+button {
+	width: 120px;
+	font-size: 1.25rem;
+	padding: 8px 0;
+	border: 1px solid #000;
+	border-radius: 6px;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+th {
+	background-color: #f4f4f4;
+}
+.alternatives-table tr:hover {
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	background-color: #e5e5e5;
+}
+._hidden {
+	display: none;
+}
+
+.scrollable-table {
+	margin-top: 20px;
+  max-height: 40vh;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+.scrollable-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.scrollable-table th {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+}
+
+tr.green {
+  background-color: rgba(21, 255, 0, 0.2);
+}
+tr.red {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+tr:hover {
+  background-color: rgba(240, 240, 240, 0.899);
+}

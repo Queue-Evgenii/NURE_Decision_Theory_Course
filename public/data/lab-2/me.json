@@ -1,0 +1,80 @@
+{
+  "criterias": [
+    {
+      "name": "K1",
+      "variants": [
+        {
+          "name": 1,
+          "weight": 2
+        },
+        {
+          "name": 2,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "K2",
+      "variants": [
+        {
+          "name": 1,
+          "weight": 2
+        },
+        {
+          "name": 2,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "K3",
+      "variants": [
+        {
+          "name": 1,
+          "weight": 3
+        },
+        {
+          "name": 2,
+          "weight": 2
+        },
+        {
+          "name": 3,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "K4",
+      "variants": [
+        {
+          "name": 1,
+          "weight": 4
+        },
+        {
+          "name": 2,
+          "weight": 3
+        },
+        {
+          "name": 3,
+          "weight": 2
+        },
+        {
+          "name": 4,
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "K5",
+      "variants": [
+        {
+          "name": 1,
+          "weight": 1
+        }
+      ]
+    }
+  ],
+  "grades": [
+    1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1
+  ]
+}

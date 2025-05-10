@@ -1,0 +1,151 @@
+[
+  {
+    "name": "K1",
+    "variants": [
+      {
+        "name": "K11",
+        "weight": 3
+      },
+      {
+        "name": "K12",
+        "weight": 2
+      },
+      {
+        "name": "K13",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "name": "K2",
+    "variants": [
+      {
+        "name": "K21",
+        "weight": 4
+      },
+      {
+        "name": "K22",
+        "weight": 3
+      },
+      {
+        "name": "K23",
+        "weight": 2
+      },
+      {
+        "name": "K24",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "name": "K3",
+    "variants": [
+      {
+        "name": "K31",
+        "weight": 4
+      },
+      {
+        "name": "K32",
+        "weight": 3
+      }
+    ]
+  },
+  {
+    "name": "K4",
+    "variants": [
+      {
+        "name": "K41",
+        "weight": 3
+      },
+      {
+        "name": "K42",
+        "weight": 2
+      },
+      {
+        "name": "K43",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "name": "K5",
+    "variants": [
+      {
+        "name": "K51",
+        "weight": 4
+      },
+      {
+        "name": "K52",
+        "weight": 3
+      }
+    ]
+  },
+  {
+    "name": "K6",
+    "variants": [
+      {
+        "name": "K61",
+        "weight": 3
+      },
+      {
+        "name": "K62",
+        "weight": 2
+      },
+      {
+        "name": "K63",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "name": "K7",
+    "variants": [
+      {
+        "name": "K71",
+        "weight": 3
+      },
+      {
+        "name": "K72",
+        "weight": 2
+      },
+      {
+        "name": "K73",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "name": "K8",
+    "variants": [
+      {
+        "name": "K81",
+        "weight": 3
+      },
+      {
+        "name": "K82",
+        "weight": 2
+      },
+      {
+        "name": "K83",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "name": "K9",
+    "variants": [
+      {
+        "name": "K91",
+        "weight": 3
+      },
+      {
+        "name": "K92",
+        "weight": 2
+      },
+      {
+        "name": "K93",
+        "weight": 1
+      }
+    ]
+  }
+]

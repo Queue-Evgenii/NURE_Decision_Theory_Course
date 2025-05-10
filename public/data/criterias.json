@@ -1,0 +1,36 @@
+[
+  {
+    "name": "K1",
+    "variants": [
+      {
+        "name": "K11",
+        "weight": 3
+      },
+      {
+        "name": "K12",
+        "weight": 2
+      },
+      {
+        "name": "K13",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "name": "K2",
+    "variants": [
+      {
+        "name": "K21",
+        "weight": 4
+      },
+      {
+        "name": "K22",
+        "weight": 3
+      },
+      {
+        "name": "K23",
+        "weight": 2
+      }
+    ]
+  }
+]
