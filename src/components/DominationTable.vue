@@ -17,7 +17,7 @@ const props = defineProps({
   },
 });
 
-const emits = defineEmits(['alternativeSelected']);
+const emits = defineEmits(['onFinished']);
 
 const initMatrix = ref<Array<Array<number>>>();
 const tables = reactive<Array<DominationTable>>([]);
@@ -56,7 +56,8 @@ const updateMatrix = (tableId: number, cellIndex: { i: number, j: number }, valu
     }
   }
 
-
+  table.chain = sortAlternatives(table.matrix);
+  console.log(table.chain)
   table.isCurrent = false;
   for (let i = 0; i < len; i++) {
     for (let j = i + 1; j < len; j++) {
@@ -67,6 +68,44 @@ const updateMatrix = (tableId: number, cellIndex: { i: number, j: number }, valu
       }
     }
   }
+
+  const sortedAlternatives = table.chain.map((c) => props.alternatives[c]);
+  emits("onFinished", sortedAlternatives)
+}
+
+function sortAlternatives(matrix: Array<Array<number>>): Array<number> {
+  const n = matrix.length;
+  const inDegree = Array(n).fill(0);
+  const graph = Array.from({ length: n }, () => []);
+
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      if (matrix[i][j] === ComparisonValues.ROW_BETTER) {
+        graph[i].push(j);
+        inDegree[j]++;
+      }
+    }
+  }
+
+  const queue = [];
+  for (let i = 0; i < n; i++) {
+    if (inDegree[i] === 0) queue.push(i);
+  }
+
+  const sorted: Array<number> = [];
+  while (queue.length > 0) {
+    const current = queue.shift();
+    if (current === undefined) continue;
+    sorted.push(current);
+    for (const neighbor of graph[current]) {
+      inDegree[neighbor]--;
+      if (inDegree[neighbor] === 0) {
+        queue.push(neighbor);
+      }
+    }
+  }
+
+  return sorted;
 }
 
 onMounted(() => {
@@ -143,7 +182,12 @@ onMounted(() => {
           </tr>
         </tbody>
       </table>
+      <div v-if="table.chain.length > 0">
+        <span v-for="(node, index) in table.chain" :key="node">
+          {{ Object.values(alternatives[node]).join("") }}
+          <span v-if="index < table.chain.length - 1">&gt; </span>
+        </span>
+      </div>
     </li>
-
   </ul>
 </template>

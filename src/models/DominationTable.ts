@@ -3,6 +3,7 @@ export class DominationTable {
   public id!: number;
   public isCurrent = true;
   public matrix: Array<Array<number>> = [];
+  public chain: Array<number> = [];
 
   constructor(matrix: Array<Array<number>>) {
     this.setId();
